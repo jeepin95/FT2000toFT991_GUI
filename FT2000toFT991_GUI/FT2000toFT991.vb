@@ -1,4 +1,5 @@
-﻿Imports System.IO.Ports
+﻿Imports System.Deployment.Application
+Imports System.IO.Ports
 
 Public Class FT2000toFT991
 
@@ -16,7 +17,18 @@ Public Class FT2000toFT991
     End Sub
 
     Private Sub FT2000toFT991_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Me.Text = "FT2000 to FT991 - v" & System.Reflection.Assembly.GetExecutingAssembly.GetName.Version.ToString
+        Dim v As String
+        Try
+            v = System.Deployment.Application.ApplicationDeployment.CurrentDeployment.CurrentVersion.ToString
+
+        Catch ex As Exception
+            v = "0.0.0.0"
+
+        End Try
+        Me.Text = "FT2000 to FT991 - v" & v
+
+
+
 
         getSerialPorts()
 
