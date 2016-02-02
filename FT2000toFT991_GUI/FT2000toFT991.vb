@@ -16,6 +16,8 @@ Public Class FT2000toFT991
     End Sub
 
     Private Sub FT2000toFT991_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Me.Text = "FT2000 to FT991 - v" & System.Reflection.Assembly.GetExecutingAssembly.GetName.Version.ToString
+
         getSerialPorts()
 
         cboFT991Port.DataSource = serialPortsFT991
@@ -132,4 +134,6 @@ Public Class FT2000toFT991
 
 
     End Sub
+
+
 End Class

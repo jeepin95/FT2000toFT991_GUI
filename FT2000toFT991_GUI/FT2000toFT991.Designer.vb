@@ -22,6 +22,7 @@ Partial Class FT2000toFT991
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FT2000toFT991))
         Me.cboFT991Port = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -36,58 +37,64 @@ Partial Class FT2000toFT991
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtLog = New System.Windows.Forms.TextBox()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'cboFT991Port
         '
         Me.cboFT991Port.FormattingEnabled = True
-        Me.cboFT991Port.Location = New System.Drawing.Point(101, 18)
+        Me.cboFT991Port.Location = New System.Drawing.Point(201, 33)
+        Me.cboFT991Port.Margin = New System.Windows.Forms.Padding(6)
         Me.cboFT991Port.Name = "cboFT991Port"
-        Me.cboFT991Port.Size = New System.Drawing.Size(90, 21)
+        Me.cboFT991Port.Size = New System.Drawing.Size(176, 33)
         Me.cboFT991Port.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(101, 1)
+        Me.Label1.Location = New System.Drawing.Point(201, 1)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 13)
+        Me.Label1.Size = New System.Drawing.Size(81, 25)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "FT-991"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(198, 1)
+        Me.Label2.Location = New System.Drawing.Point(395, 1)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(71, 13)
+        Me.Label2.Size = New System.Drawing.Size(143, 25)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "RMS Express"
         '
         'cboRMSPort
         '
         Me.cboRMSPort.FormattingEnabled = True
-        Me.cboRMSPort.Location = New System.Drawing.Point(198, 18)
+        Me.cboRMSPort.Location = New System.Drawing.Point(395, 33)
+        Me.cboRMSPort.Margin = New System.Windows.Forms.Padding(6)
         Me.cboRMSPort.Name = "cboRMSPort"
-        Me.cboRMSPort.Size = New System.Drawing.Size(93, 21)
+        Me.cboRMSPort.Size = New System.Drawing.Size(182, 33)
         Me.cboRMSPort.TabIndex = 0
         '
         'btnSaveSettings
         '
-        Me.btnSaveSettings.Location = New System.Drawing.Point(313, 13)
+        Me.btnSaveSettings.Location = New System.Drawing.Point(626, 25)
+        Me.btnSaveSettings.Margin = New System.Windows.Forms.Padding(6)
         Me.btnSaveSettings.Name = "btnSaveSettings"
-        Me.btnSaveSettings.Size = New System.Drawing.Size(75, 23)
+        Me.btnSaveSettings.Size = New System.Drawing.Size(150, 44)
         Me.btnSaveSettings.TabIndex = 3
         Me.btnSaveSettings.Text = "Save Settings"
         Me.btnSaveSettings.UseVisualStyleBackColor = True
         '
         'btnConnect
         '
-        Me.btnConnect.Location = New System.Drawing.Point(313, 42)
+        Me.btnConnect.Location = New System.Drawing.Point(626, 81)
+        Me.btnConnect.Margin = New System.Windows.Forms.Padding(6)
         Me.btnConnect.Name = "btnConnect"
-        Me.btnConnect.Size = New System.Drawing.Size(75, 23)
+        Me.btnConnect.Size = New System.Drawing.Size(150, 44)
         Me.btnConnect.TabIndex = 4
         Me.btnConnect.Text = "Connect"
         Me.btnConnect.UseVisualStyleBackColor = True
@@ -110,106 +117,113 @@ Partial Class FT2000toFT991
         Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label4, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Label5, 0, 3)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(12, 12)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(24, 23)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(6)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(295, 104)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(590, 200)
         Me.TableLayoutPanel1.TabIndex = 5
         '
         'cboFT991Baud
         '
         Me.cboFT991Baud.FormattingEnabled = True
         Me.cboFT991Baud.Items.AddRange(New Object() {"38400", "19200", "9600", "4800"})
-        Me.cboFT991Baud.Location = New System.Drawing.Point(101, 46)
+        Me.cboFT991Baud.Location = New System.Drawing.Point(201, 79)
+        Me.cboFT991Baud.Margin = New System.Windows.Forms.Padding(6)
         Me.cboFT991Baud.Name = "cboFT991Baud"
-        Me.cboFT991Baud.Size = New System.Drawing.Size(90, 21)
+        Me.cboFT991Baud.Size = New System.Drawing.Size(176, 33)
         Me.cboFT991Baud.TabIndex = 1
         '
         'cboRMSBaud
         '
         Me.cboRMSBaud.FormattingEnabled = True
         Me.cboRMSBaud.Items.AddRange(New Object() {"38400", "19200", "9600", "4800"})
-        Me.cboRMSBaud.Location = New System.Drawing.Point(198, 46)
+        Me.cboRMSBaud.Location = New System.Drawing.Point(395, 79)
+        Me.cboRMSBaud.Margin = New System.Windows.Forms.Padding(6)
         Me.cboRMSBaud.Name = "cboRMSBaud"
-        Me.cboRMSBaud.Size = New System.Drawing.Size(93, 21)
+        Me.cboRMSBaud.Size = New System.Drawing.Size(182, 33)
         Me.cboRMSBaud.TabIndex = 2
         '
         'cboFT991RTS
         '
         Me.cboFT991RTS.FormattingEnabled = True
         Me.cboFT991RTS.Items.AddRange(New Object() {"True", "False"})
-        Me.cboFT991RTS.Location = New System.Drawing.Point(101, 74)
+        Me.cboFT991RTS.Location = New System.Drawing.Point(201, 125)
+        Me.cboFT991RTS.Margin = New System.Windows.Forms.Padding(6)
         Me.cboFT991RTS.Name = "cboFT991RTS"
-        Me.cboFT991RTS.Size = New System.Drawing.Size(90, 21)
+        Me.cboFT991RTS.Size = New System.Drawing.Size(176, 33)
         Me.cboFT991RTS.TabIndex = 3
         '
         'cboRMSRTS
         '
         Me.cboRMSRTS.FormattingEnabled = True
         Me.cboRMSRTS.Items.AddRange(New Object() {"True", "False"})
-        Me.cboRMSRTS.Location = New System.Drawing.Point(198, 74)
+        Me.cboRMSRTS.Location = New System.Drawing.Point(395, 125)
+        Me.cboRMSRTS.Margin = New System.Windows.Forms.Padding(6)
         Me.cboRMSRTS.Name = "cboRMSRTS"
-        Me.cboRMSRTS.Size = New System.Drawing.Size(93, 21)
+        Me.cboRMSRTS.Size = New System.Drawing.Size(182, 33)
         Me.cboRMSRTS.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(4, 15)
+        Me.Label3.Location = New System.Drawing.Point(7, 27)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(55, 13)
+        Me.Label3.Size = New System.Drawing.Size(112, 25)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Serial Port"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(4, 43)
+        Me.Label4.Location = New System.Drawing.Point(7, 73)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 13)
+        Me.Label4.Size = New System.Drawing.Size(113, 25)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Baud Rate"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(4, 71)
+        Me.Label5.Location = New System.Drawing.Point(7, 119)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(65, 13)
+        Me.Label5.Size = New System.Drawing.Size(127, 25)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "RTS Enable"
         '
-        'txtLog
+        'RichTextBox1
         '
-        Me.txtLog.Location = New System.Drawing.Point(12, 123)
-        Me.txtLog.Multiline = True
-        Me.txtLog.Name = "txtLog"
-        Me.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtLog.Size = New System.Drawing.Size(376, 126)
-        Me.txtLog.TabIndex = 6
+        Me.RichTextBox1.Location = New System.Drawing.Point(24, 250)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(752, 370)
+        Me.RichTextBox1.TabIndex = 6
+        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
         'FT2000toFT991
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(400, 261)
-        Me.Controls.Add(Me.txtLog)
+        Me.ClientSize = New System.Drawing.Size(800, 632)
+        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.btnConnect)
         Me.Controls.Add(Me.btnSaveSettings)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "FT2000toFT991"
         Me.Text = "FT2000 to FT991"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -227,5 +241,5 @@ Partial Class FT2000toFT991
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents cboFT991RTS As ComboBox
-    Friend WithEvents txtLog As TextBox
+    Friend WithEvents RichTextBox1 As RichTextBox
 End Class

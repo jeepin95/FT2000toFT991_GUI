@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>CAUTION USE AT YOUR OWN RISK, NO WARRANTY
+
+This assumes that your FT-991 is connected with a serial port (USB or otherwise).
+
+In addition com0com or something similar needs to be setup with dual serial ports connected via a null-modem cable. RMS Express should be connected to one "end"/port of that cable, and this application should be connected to the other "end"/port under the RMS Express settings. With both settings configured, click connect. 
+All CAT commands sent by RMS Express will be forwarded to the FT-991 port. When a command to set frequency is seen it will be modified to reflect the proper FT-991 command. In addtion it will send a command to set VFO-B to the same frequency.</value>
+  </data>
 </root>
